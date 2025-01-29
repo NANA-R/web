@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <script>
+function alert1() {
+  if (入力内容.value == "") {
+    alert("空白での送信はできません.");
+  } else {
+    area1.innerText = 入力内容.value;
+    alert("伝言をセットしました.");
+    入力内容.value = "";
+  }
+}
+</script>
+ </head>
+  <body>
+    伝言板
+    <p id="area1">伝言はまだありません...</p>
+    <input id="入力内容"><button onclick="alert1();">セット</button>
+  </body>
+<html>
+
